@@ -1,0 +1,17 @@
+.about {
+	@include container(row);
+	background-color: darken($color: $bg-color, $amount: 15);
+	padding: 0 2.5em;
+	&__info--container {
+		@include container;
+		text-align: justify;
+		background-color: darken($bg-color, 15);
+	}
+}
+
+@media (max-width: 650px) {
+	.about {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}

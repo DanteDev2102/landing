@@ -1,0 +1,27 @@
+.home {
+	@include container(
+		$jc: space-between,
+		$wrap: wrap,
+		$ali: space-around
+	);
+	padding: 4em;
+	background-image: url('https://hardzone.es/app/uploads-hardzone.es/2018/09/Devil-May-Cry-5-01.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	&__title {
+		font-size: 24px;
+		font-weight: 600;
+		color: $bg-color;
+	}
+
+	&__text {
+		text-align: justify;
+		color: lighten($color: $font-color, $amount: 50);
+		font-size: 18px;
+	}
+
+	&__btn {
+		@include btn;
+	}
+}

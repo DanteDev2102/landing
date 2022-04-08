@@ -1,0 +1,8 @@
+.footer {
+	position: relative;
+	bottom: 0;
+	z-index: 20;
+	margin-top: 3rem;
+	@include container(row, $jc: center, $ali: center);
+	background-color: darken($color: $bg-color, $amount: 40);
+}

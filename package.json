@@ -1,0 +1,12 @@
+{
+	"name": "prueba-tecnica",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"sass": "sass --watch sass/index.scss css/index.css"
+	},
+	"dependencies": {
+		"sass": "^1.50.0"
+	}
+}

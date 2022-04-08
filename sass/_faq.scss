@@ -1,0 +1,8 @@
+.faq {
+	width: 100%;
+	@include container($ali: flex-start);
+	padding-left: 25px;
+	&__accordion--container {
+		padding-bottom: 25px;
+	}
+}

@@ -1,0 +1,60 @@
+.header {
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	@include container(row);
+	&__logo {
+		margin-right: 50%;
+		width: 65px;
+	}
+}
+
+.navbar {
+	z-index: 10;
+	&__list {
+		width: 100%;
+		@include container(row);
+		list-style: none;
+		&--element {
+			margin-right: 15%;
+			& > a {
+				text-decoration: none;
+				color: $font-color;
+				&:focus {
+					color: darken($font-color, 50);
+				}
+			}
+			&:hover {
+				text-decoration: underline;
+				color: darken($font-color, 30);
+			}
+		}
+	}
+}
+
+.language {
+	cursor: pointer;
+	&__list {
+		position: absolute;
+		list-style: none;
+		width: 4em;
+		height: 5em;
+		left: 90%;
+		@include container;
+		margin-right: 100%;
+		background-color: darken($bg-color, 50);
+	}
+	&__target:hover {
+		text-decoration: underline;
+	}
+}
+
+@media (max-width: 847px) {
+	.header__logo {
+		display: none;
+	}
+	.language__list {
+		left: 65%;
+	}
+}

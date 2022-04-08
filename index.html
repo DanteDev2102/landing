@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
+		<!-- FAVICON -->
+		<link
+			rel="shortcut icon"
+			href="./assests/favicon.ico"
+			type="image/x-icon"
+		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/index.css" />
+		<title>Devil May Cry</title>
+	</head>
+	<body class="wrapper">
+		<!-- HEADER -->
+
+		<header class="header">
+			<img
+				src="./assests/logo.png"
+				alt="logo"
+				loading="lazy"
+				class="header__logo"
+			/>
+			<nav class="navbar">
+				<ul class="navbar__list">
+					<li class="navbar__list--element">
+						<a translate="no" href="#home">Home</a>
+					</li>
+					<li class="navbar__list--element">
+						<a translate="no" href="#about">About</a>
+					</li>
+					<li class="navbar__list--element">
+						<a translate="no" href="#faq">FAQ</a>
+					</li>
+					<li
+						class="navbar__list--element language"
+						id="language"
+					>
+						<span class="language__text">Lang</span>
+						<ul class="language__list" id="list-language">
+							<li class="language__target" id="es">
+								spanish
+							</li>
+							<li class="language__target" id="en">
+								english
+							</li>
+							<li class="language__target" id="jp">
+								japense
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<!-- HERO SECTION -->
+
+			<section id="home" class="home">
+				<h1 class="home__title" translate="no">
+					Devil May Cry
+				</h1>
+				<p class="home__text">
+					Lorem ipsum, dolor sit amet consectetur
+					adipisicing elit. Fugit quibusdam dolores sunt
+					praesentium fuga! Voluptates inventore blanditiis
+					aut architecto nobis, cum voluptatum error
+					eligendi esse dolor maiores ad reiciendis dolorum!
+					Lorem ipsum dolor sit amet consectetur adipisicing
+					elit. Hic fuga voluptates deserunt reprehenderit
+					similique alias tenetur itaque voluptate rerum
+					quisquam doloremque vero, deleniti incidunt qui.
+					Odit fugiat nihil eum voluptatum.
+				</p>
+				<div class="home__btn--container">
+					<button class="home__btn" id="show-modal">
+						subscribe
+					</button>
+				</div>
+				<form class="modal" id="form">
+					<div class="modal__cerrar--container">
+						<img
+							src="./assests/borrar.png"
+							id="cerrar"
+							class="modal__cerrar"
+							loading="lazy"
+						/>
+					</div>
+					<h3 class="modal__title">
+						subscribe to devil may cry
+					</h3>
+					<p class="modal__text">
+						Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Quas maiores eaque quo
+						soluta ipsam at facilis voluptate et, ratione
+						ullam similique minima rerum reiciendis, nobis
+						illum a sit molestias nesciunt!
+					</p>
+					<input
+						class="modal__email"
+						id="email"
+						type="text"
+						autocomplete="off"
+						placeholder="jhondoe@gmail.com"
+					/>
+					<div>
+						<div class="modal__check">
+							<input type="checkbox" id="conditions" />
+							<span>I accept the</span>
+							<a href="#">terms and conditions</a>
+						</div>
+						<div class="modal__check">
+							<input type="checkbox" id="politicies" />
+							<span>I accept the</span>
+							<a href="#"
+								>security and privacy policies</a
+							>
+						</div>
+					</div>
+					<p class="modal__error" id="error"></p>
+					<button
+						class="modal__send"
+						id="submit"
+						type="submit"
+					>
+						send
+					</button>
+				</form>
+			</section>
+
+			<!-- ABOUT SECTION -->
+
+			<section class="about" id="about">
+				<section class="about__info--container">
+					<h2 class="about__info--title">Dante Sparda</h2>
+					<p class="about__info--text">
+						Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Assumenda minus ipsam
+						aspernatur mollitia, sint, adipisci officiis
+						ipsa molestiae perferendis inventore, unde
+						facilis a itaque? Quia cupiditate atque
+						obcaecati fugiat doloremque! Lorem ipsum dolor
+						sit amet consectetur adipisicing elit.
+						Assumenda minus ipsam aspernatur mollitia,
+						sint, adipisci officiis ipsa molestiae
+						perferendis inventore, unde facilis a itaque?
+						Quia cupiditate atque obcaecati fugiat
+						doloremque!
+					</p>
+				</section>
+				<img
+					src="./assests/dante.webp"
+					alt="Dante Sparda"
+					loading="lazy"
+					class="about__img"
+				/>
+			</section>
+
+			<!-- FAQ SECTION -->
+
+			<section class="faq" id="faq">
+				<h2 class="faq__title">Frequent questions</h2>
+				<div class="faq__accordion--container" id="accordion">
+					<details class="faq__accordion">
+						<summary class="faq__accordion--title" id="0">
+							Services
+						</summary>
+						<p class="faq__accordion--text">
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Adipisci blanditiis
+							aperiam pariatur voluptatum dolor, aliquid
+							esse accusamus, consequuntur commodi
+							voluptatibus tempora eaque officiis, amet
+							ipsa cumque molestiae quas provident
+							culpa?
+						</p>
+					</details>
+
+					<details class="faq__accordion">
+						<summary class="faq__accordion--title" id="1">
+							Styles
+						</summary>
+						<p class="faq__accordion--text">
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Adipisci blanditiis
+							aperiam pariatur voluptatum dolor, aliquid
+							esse accusamus, consequuntur commodi
+							voluptatibus tempora eaque officiis, amet
+							ipsa cumque molestiae quas provident
+							culpa?
+						</p>
+					</details>
+
+					<details class="faq__accordion">
+						<summary class="faq__accordion--title" id="2">
+							Demons defeat
+						</summary>
+						<p class="faq__accordion--text">
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Adipisci blanditiis
+							aperiam pariatur voluptatum dolor, aliquid
+							esse accusamus, consequuntur commodi
+							voluptatibus tempora eaque officiis, amet
+							ipsa cumque molestiae quas provident
+							culpa?
+						</p>
+					</details>
+
+					<details class="faq__accordion">
+						<summary class="faq__accordion--title" id="3">
+							Family
+						</summary>
+						<p class="faq__accordion--text">
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Adipisci blanditiis
+							aperiam pariatur voluptatum dolor, aliquid
+							esse accusamus, consequuntur commodi
+							voluptatibus tempora eaque officiis, amet
+							ipsa cumque molestiae quas provident
+							culpa?
+						</p>
+					</details>
+
+					<details class="faq__accordion">
+						<summary class="faq__accordion--title" id="4">
+							Devil Arms
+						</summary>
+						<p class="faq__accordion--text">
+							Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Adipisci blanditiis
+							aperiam pariatur voluptatum dolor, aliquid
+							esse accusamus, consequuntur commodi
+							voluptatibus tempora eaque officiis, amet
+							ipsa cumque molestiae quas provident
+							culpa?
+						</p>
+					</details>
+				</div>
+			</section>
+		</main>
+
+		<!-- FOOTER -->
+
+		<footer class="footer">
+			<h3 class="footer__title">Jose Acosta</h3>
+		</footer>
+
+		<script src="./js/dropdown.js"></script>
+		<script src="./js/modal.js"></script>
+		<script src="./js/acordion.js"></script>
+	</body>
+</html>
