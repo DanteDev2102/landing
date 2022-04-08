@@ -216,7 +216,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   background: #8e1600;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-family: sans-serif;
   color: #efefef;
@@ -235,6 +235,10 @@
   color: #efefef;
   text-align: justify;
   background-color: #c11e00;
+}
+.about__img {
+  position: relative;
+  left: 3.4%;
 }
 
 @media (max-width: 650px) {

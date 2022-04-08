@@ -7,6 +7,10 @@
 		text-align: justify;
 		background-color: darken($bg-color, 15);
 	}
+	&__img {
+		position: relative;
+		left: 3.4%;
+	}
 }
 
 @media (max-width: 650px) {
