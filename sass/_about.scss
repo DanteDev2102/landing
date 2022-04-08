@@ -1,5 +1,5 @@
 .about {
-	@include container(row);
+	@include container(row, $jc: space-between);
 	background-color: darken($color: $bg-color, $amount: 15);
 	padding: 0 2.5em;
 	&__info--container {
